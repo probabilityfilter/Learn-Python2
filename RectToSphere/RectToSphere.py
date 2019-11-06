@@ -11,7 +11,7 @@ yMin = -90
 yMax = 90
 N = 100
 
-# Generate random daa
+# Generate random data
 xValues = np.random.rand(N)
 yValues = np.random.rand(N)
 xScaledValues = xMin + (xValues * (xMax - xMin))
