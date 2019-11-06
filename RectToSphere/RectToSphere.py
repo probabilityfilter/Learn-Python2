@@ -4,13 +4,14 @@ import matplotlib.pyplot as plt
 from numpy.random import rand
 from mpl_toolkits.mplot3d import Axes3D  # 3D plotting toolkit
 
-# Generate random floating point values
+# Specify limits
 xMin = 0
 xMax = 24
 yMin = -90
 yMax = 90
 N = 100
 
+# Generate random daa
 xValues = np.random.rand(N)
 yValues = np.random.rand(N)
 xScaledValues = xMin + (xValues * (xMax - xMin))
