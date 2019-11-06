@@ -47,10 +47,10 @@ z = 1 * np.outer(np.ones(np.size(u)), np.cos(v))
 # Overlaying Wireframe of Sky over Candidate data
 ax.plot_wireframe(x, y, z, rstride=10, cstride=10, color="b", alpha=0.1)
 
-# Plot distribution of Candidates in the sky
+""" # Plot distribution of Candidates in the sky
 ax.scatter(
     x3d, -z3d, y3d
-)  # Rotate all data points by 90 Deg to get the correct orientation
+)  # Rotate all data points by 90 Deg to get the correct orientation """
 
 ax.set_xlim(-1, 1)
 ax.set_ylim(-1, 1)
@@ -60,4 +60,12 @@ ax.set_ylabel("Y axis")
 ax.set_zlabel("Z axis")
 ax.view_init(20, 45)
 plt.axis("off")  # Remove axes for visual appeal
+plt.show()
+
+# Plot x-y values in Cartesian co-ordinates
+plt.scatter(ra, dec)
+plt.title("Random Data")
+plt.xlabel("RA")
+plt.ylabel("Dec")
+
 plt.show()
